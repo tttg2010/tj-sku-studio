@@ -1,0 +1,50 @@
+{
+  "run_id": "REPLACE-unique-run-id",
+  "run_kind": "set",
+  "started_at": null,
+  "finished_at": null,
+  "first_draft_at": null,
+  "model": "gpt-image-2.6-sunburst",
+  "input_fingerprint": "REPLACE-with-verified-source-hashes-and-order",
+  "config_fingerprint": "REPLACE-with-verified-plan-model-parameters",
+  "estimated_next_seconds": 180,
+  "first_round_qa_usable": null,
+  "rework_cycles": null,
+  "requested": {"main": 1, "secondary": 1, "aplus": 1},
+  "sources": [{"id": "front", "path": "source.png"}],
+  "identity_lock": "REPLACE: silhouette, count, material, highlights, parts, print and unknown views",
+  "claims": [{"id": "visible-detail", "basis": "visible", "proof": "REPLACE: source view, exact visible location and approved fact"}],
+  "core_claim_ids": ["visible-detail"],
+  "slots": [
+    {
+      "id": "main-01", "role": "main", "source_ids": ["front"], "claim_ids": [],
+      "question": "What exact item and quantity are included?", "camera": "source hero angle",
+      "composition": "whole item centered on clean white", "interaction": "none",
+      "evidence_style": "hero", "visual_proof": "REPLACE: exact included item visible without copy",
+      "technique": "original_pixels", "scene_fit": "REPLACE: source support plane, light and framing",
+      "target_size": [2000, 2000], "output": "generated-main-01.png",
+      "base_asset_id": "main-scene-01", "qa_report": "qa/main-01.json", "attempts": [],
+      "review": {"reviewer": null, "reviewed_at": null, "output_sha256": null, "notes": null, "checks": {"identity": null, "material": null, "mask_edges": null, "scene_integration": null, "evidence_visible": null, "text_layout": null, "no_invented_claims": null}}
+    },
+    {
+      "id": "secondary-01", "role": "secondary", "source_ids": ["front"], "claim_ids": ["visible-detail"],
+      "question": "What construction detail can be verified?", "camera": "source detail close-up",
+      "composition": "detail crop plus natural negative space", "interaction": "visible detail inspection",
+      "evidence_style": "macro", "visual_proof": "REPLACE: a real supported detail enlarged, not an invented cross-section",
+      "technique": "original_pixels", "scene_fit": "REPLACE: preserve detail pixels; match support and light",
+      "target_size": [2000, 2000], "output": "generated-secondary-01.png",
+      "base_asset_id": "detail-scene-01", "qa_report": "qa/secondary-01.json", "attempts": [],
+      "review": {"reviewer": null, "reviewed_at": null, "output_sha256": null, "notes": null, "checks": {"identity": null, "material": null, "mask_edges": null, "scene_integration": null, "evidence_visible": null, "text_layout": null, "no_invented_claims": null}}
+    },
+    {
+      "id": "aplus-01", "role": "aplus", "source_ids": ["front"], "claim_ids": ["visible-detail"],
+      "question": "How does the supported use fit everyday life?", "camera": "compatible environmental wide shot",
+      "composition": "wide contextual banner with continuous copy-free negative space", "interaction": "REPLACE-supported-use-with-source-proof",
+      "evidence_style": "use", "visual_proof": "REPLACE: a different supported interaction visible without copy; request a use reference if needed",
+      "technique": "original_pixels", "scene_fit": "REPLACE: camera, contact/mounting points, light, scale, occlusion; no forced deformation",
+      "target_size": [970, 600], "output": "generated-aplus-01.png",
+      "base_asset_id": "aplus-scene-01", "qa_report": "qa/aplus-01.json", "attempts": [],
+      "review": {"reviewer": null, "reviewed_at": null, "output_sha256": null, "notes": null, "checks": {"identity": null, "material": null, "mask_edges": null, "scene_integration": null, "evidence_visible": null, "text_layout": null, "no_invented_claims": null}}
+    }
+  ]
+}

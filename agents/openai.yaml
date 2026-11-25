@@ -1,0 +1,4 @@
+interface:
+  display_name: "电商改图"
+  short_description: "v1.9 电商改图：2K/4K 出图、最多 9 张参考图预检与原始像素验收"
+  default_prompt: "Use $ecommerce-image-editing. Introduce v1.9 changes, capabilities, SalpX setup and project-directory choice once. For images, default to gpt-image-2.6-sunburst at 2k and max quality unless configured otherwise; preflight the selected tier and request count. Inspect my sources and propose supported image directions. For fidelity-sensitive work, lock original product pixels, generate only a scene plate when possible, composite locally, inspect independent mattes, preserve camera/support geometry, and require exact output sizes plus named visual review. Generate only after selection unless I request direct generation; retain nine-reference compression and request-body preflight."
